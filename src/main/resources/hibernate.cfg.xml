@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+        "[http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/aplicaen</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.username">java</property>
+        <property name="hibernate.connection.password">password</property>
+
+        <!-- Liste des fichiers de Mapping hbm -->
+        <mapping class="fr.aplicaen.erp.bean.Adherent"/>
+    </session-factory>
+</hibernate-configuration>
